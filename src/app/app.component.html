@@ -179,7 +179,9 @@
         <div class="widget search">
           <div class="widget-content">
             <div id="searchbox">
-              <input type="text" placeholder="請輸入搜尋關鍵字" accesskey="s" [(ngModel)]='str'>
+              <input type="text" placeholder="請輸入搜尋關鍵字" accesskey="s" [(ngModel)]='str' (keyup.Esc)='cleanInput()'>
+
+
 
               <input type="button" value="搜尋" id="searchbutton"> 當前字數:{{str.length}}
             </div>

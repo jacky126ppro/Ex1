@@ -17,4 +17,8 @@ export class AppComponent {
       this.title = 'The Will Will Web';
     }
   }
+  cleanInput(Esc) {
+    this.str = '';
+  }
+
 }
